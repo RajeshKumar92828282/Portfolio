@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { useInView } from "motion/react";
 import { useRef } from "react";
+
 import {
   FaReact,
   FaNode,
@@ -9,58 +10,77 @@ import {
   FaGitAlt,
   FaGithub,
   FaDatabase,
+  FaShieldAlt,
+  FaBug,
+  FaRobot,
+  FaBrain,
+  FaHtml5,
+  FaCss3Alt,
 } from "react-icons/fa";
+
 import {
-  SiMongodb,
-  SiExpress,
   SiJavascript,
-  SiTypescript,
   SiTailwindcss,
-  SiMysql,
+  SiExpress,
+  SiMongodb,
   SiCplusplus,
+  SiHuggingface,
+  SiTensorflow,
 } from "react-icons/si";
 
 export default function Skills() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
-  const skillCategories = [
-    {
-      title: "Frontend",
-      skills: [
-        { name: "React.js", icon: FaReact, color: "#61DAFB", level: 90 },
-        { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E", level: 85 },
-        { name: "TypeScript", icon: SiTypescript, color: "#3178C6", level: 80 },
-        { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4", level: 85 },
-      ],
-    },
-    {
-      title: "Backend",
-      skills: [
-        { name: "Node.js", icon: FaNode, color: "#339933", level: 90 },
-        { name: "Express.js", icon: SiExpress, color: "#FFFFFF", level: 85 },
-        { name: "MongoDB", icon: SiMongodb, color: "#47A248", level: 85 },
-        { name: "MySQL", icon: SiMysql, color: "#4479A1", level: 80 },
-      ],
-    },
-    {
-      title: "Languages",
-      skills: [
-        { name: "Python", icon: FaPython, color: "#3776AB", level: 85 },
-        { name: "Java", icon: FaJava, color: "#007396", level: 80 },
-        { name: "C++", icon: SiCplusplus, color: "#00599C", level: 75 },
-      ],
-    },
-    {
-      title: "Tools & Others",
-      skills: [
-        { name: "Git", icon: FaGitAlt, color: "#F05032", level: 85 },
-        { name: "GitHub", icon: FaGithub, color: "#FFFFFF", level: 90 },
-        { name: "REST APIs", icon: FaDatabase, color: "#00758F", level: 85 },
-      ],
-    },
-  ];
 
+const skillCategories = [
+  {
+    title: "Frontend",
+    skills: [
+      { name: "React.js", icon: FaReact, color: "#61DAFB", level: 85 },
+      { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E", level: 85 },
+      { name: "HTML5", icon: FaHtml5, color: "#E34F26", level: 90 },
+      { name: "CSS3", icon: FaCss3Alt, color: "#1572B6", level: 85 },
+      { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4", level: 85 },
+    ],
+  },
+  {
+    title: "Backend",
+    skills: [
+      { name: "Node.js", icon: FaNode, color: "#339933", level: 85 },
+      { name: "Express.js", icon: SiExpress, color: "#FFFFFF", level: 80 },
+      { name: "MongoDB", icon: SiMongodb, color: "#47A248", level: 80 },
+      { name: "REST APIs", icon: FaDatabase, color: "#00758F", level: 85 },
+    ],
+  },
+  {
+    title: "Programming",
+    skills: [
+      { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E", level: 85 },
+      { name: "Python", icon: FaPython, color: "#3776AB", level: 75 },
+      { name: "Java", icon: FaJava, color: "#007396", level: 70 },
+      { name: "C++", icon: SiCplusplus, color: "#00599C", level: 70 },
+    ],
+  },
+  {
+    title: "Cyber Security",
+    skills: [
+      { name: "Cyber Security", icon: FaShieldAlt, color: "#00FFAA", level: 75 },
+      { name: "Bug Hunting", icon: FaBug, color: "#FF4D4D", level: 70 },
+      { name: "Git", icon: FaGitAlt, color: "#F05032", level: 80 },
+      { name: "GitHub", icon: FaGithub, color: "#FFFFFF", level: 85 },
+    ],
+  },
+  {
+    title: "Artificial Intelligence",
+    skills: [
+      { name: "LLMs", icon: FaBrain, color: "#8B5CF6", level: 80 },
+      { name: "Hugging Face", icon: SiHuggingface, color: "#FFD21E", level: 75 },
+      { name: "TensorFlow", icon: SiTensorflow, color: "#FF6F00", level: 70 },
+      { name: "Prompt Engineering", icon: FaRobot, color: "#06B6D4", level: 80 },
+    ],
+  },
+];
   return (
     <section id="skills" className="relative py-20 md:py-32" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -8,35 +8,101 @@ export default function Projects() {
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   const projects = [
-    {
-      title: "Gamify222",
-      description: "Smart Education Platform with gamification features, interactive learning modules, and real-time progress tracking for enhanced student engagement.",
-      image: "https://images.unsplash.com/photo-1673515334386-2b24073bb22f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      tags: ["React", "Node.js", "MongoDB", "Express"],
-      github: "#",
-      demo: "#",
-      gradient: "from-blue-600 to-cyan-600",
-    },
-    {
-      title: "Job Portal Backend",
-      description: "Comprehensive job portal backend system with advanced search, filtering, application tracking, and real-time notifications for seamless recruitment.",
-      image: "https://images.unsplash.com/photo-1653038417332-6db0ff9d4bfb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      tags: ["Node.js", "Express", "MySQL", "REST API"],
-      github: "#",
-      demo: "#",
-      gradient: "from-purple-600 to-pink-600",
-    },
-    {
-      title: "GDG Hackathon Project",
-      description: "Innovative solution developed during Google Developer Groups hackathon, focusing on solving real-world problems with modern tech stack.",
-      image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      tags: ["React", "TypeScript", "Firebase", "Tailwind"],
-      github: "#",
-      demo: "#",
-      gradient: "from-cyan-600 to-blue-600",
-    },
-  ];
+  {
+    title: "NeuroVault Memory Network",
+    description:
+      "Production-ready decentralized AI memory storage platform built on Arbitrum Stylus WASM smart contracts with multi-chain deployment, IPFS storage, deterministic AI embeddings, and full-stack integration.",
+    image:
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+    tags: [
+      "React",
+      "TypeScript",
+      "FastAPI",
+      "Stylus WASM",
+      "Arbitrum",
+      "IPFS",
+      "TensorFlow",
+      "LLMs",
+      "Hugging Face",
+    ],
+    github: "#",
+    demo: "#",
+    gradient: "from-violet-600 to-fuchsia-600",
+  },
 
+  {
+    title: "Gamify222",
+    description:
+      "Smart education platform with gamification features, quizzes, progress tracking, and interactive learning modules for enhanced student engagement.",
+    image:
+      "https://images.unsplash.com/photo-1673515334386-2b24073bb22f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+    tags: ["React", "Node.js", "MongoDB", "Express"],
+    github: "https://github.com/RajeshKumar92828282/gamify222",
+    demo: "#",
+    gradient: "from-blue-600 to-cyan-600",
+  },
+
+  {
+    title: "GDG Hackathon Project",
+    description:
+      "Innovative solution developed during Google Developer Groups Hackathon focused on solving real-world problems using AI and modern web technologies.",
+    image:
+      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+    tags: ["React", "Firebase", "AI", "Tailwind CSS"],
+    github: "#",
+    demo: "#",
+    gradient: "from-cyan-600 to-blue-600",
+  },
+
+  {
+    title: "E-Commerce Platform",
+    description:
+      "Full-stack e-commerce web application with authentication, product management, shopping cart, order system, and responsive modern UI.",
+    image:
+      "https://images.unsplash.com/photo-1556740749-887f6717d7e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+    tags: ["React", "Node.js", "MongoDB", "Express"],
+    github: "https://github.com/RajeshKumar92828282/E-commerce",
+    demo: "#",
+    gradient: "from-pink-600 to-red-600",
+  },
+
+  {
+    title: "Job Portal Backend",
+    description:
+      "Backend system for a job portal with authentication, job posting, filtering, application tracking, and REST API integration.",
+    image:
+      "https://images.unsplash.com/photo-1653038417332-6db0ff9d4bfb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+    tags: ["Node.js", "Express", "MongoDB", "REST API"],
+    github: "https://github.com/RajeshKumar92828282/job-portal-backend",
+    demo: "#",
+    gradient: "from-purple-600 to-pink-600",
+  },
+
+  {
+    title: "Event Management System",
+    description:
+      "Modern event management platform for organizing, tracking, and managing events with responsive dashboard and registration features.",
+    image:
+      "https://images.unsplash.com/photo-1511578314322-379afb476865?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+    tags: ["React", "MongoDB", "Express", "Node.js"],
+    github:
+      "https://github.com/RajeshKumar92828282/Event-Management-System",
+    demo: "#",
+    gradient: "from-cyan-600 to-blue-600",
+  },
+
+  {
+    title: "DSA Practice",
+    description:
+      "Collection of Data Structures and Algorithms implementations with optimized problem-solving approaches in C++ and Java.",
+    image:
+      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+    tags: ["C++", "Java", "DSA", "Algorithms"],
+    github: "https://github.com/RajeshKumar92828282/DSA-Practice",
+    demo: "#",
+    gradient: "from-green-600 to-emerald-600",
+  },
+];
   return (
     <section id="projects" className="relative py-20 md:py-32" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

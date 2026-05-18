@@ -15,27 +15,32 @@ export default function About() {
   ];
 
   const features = [
-    {
-      title: "BCA Student",
-      description: "Pursuing Bachelor of Computer Applications at Centurion University, building strong foundations in computer science.",
-      icon: "🎓",
-    },
-    {
-      title: "Backend Specialist",
-      description: "Passionate about backend systems and scalable applications. Experience in building robust APIs and server-side architectures.",
-      icon: "⚙️",
-    },
-    {
-      title: "AI Enthusiast",
-      description: "Interested in AI integration and modern web technologies. Exploring machine learning and its applications in web development.",
-      icon: "🤖",
-    },
-    {
-      title: "Startup Mindset",
-      description: "Active participant in hackathons and startup initiatives. Love building products that solve real-world problems.",
-      icon: "🚀",
-    },
-  ];
+  {
+    title: "BCA Student",
+    description:
+      "Pursuing Bachelor of Computer Applications at Centurion University, building strong foundations in computer science and software development.",
+    icon: "🎓",
+  },
+  {
+    title: "Cyber Security & Bug Hunting",
+    description:
+      "Passionate about ethical hacking, vulnerability assessment, and bug hunting to improve the security of modern web applications.",
+    icon: "🛡️",
+  },
+  {
+    title: "MERN Stack Developer",
+    description:
+      "Building full-stack web applications using MongoDB, Express.js, React.js, and Node.js with scalable backend systems and modern UI/UX.",
+    icon: "💻",
+  },
+  {
+    title: "AI Enthusiast",
+    description:
+      "Exploring AI tools, automation, and intelligent web solutions to create innovative digital experiences.",
+    icon: "🤖",
+  },
+];
+
 
   return (
     <section id="about" className="relative py-20 md:py-32" ref={ref}>

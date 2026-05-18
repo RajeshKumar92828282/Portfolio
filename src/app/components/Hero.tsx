@@ -26,6 +26,21 @@ const techIcons = [
   { Icon: SiMongodb, color: '#47A248', delay: 0.6 },
 ];
 
+const socialLinks = [
+  {
+    Icon: Github,
+    link: "https://github.com/RajeshKumar92828282",
+  },
+  {
+    Icon: Linkedin,
+    link: "https://www.linkedin.com/in/rajesh-kumar-b93391365",
+  },
+  {
+    Icon: Mail,
+    link: "rb3302436@gmail.com",
+  },
+];
+
 export default function HeroSection() {
 
   const scrollToSection = (id: string) => {
@@ -84,9 +99,7 @@ export default function HeroSection() {
               Rajesh Kumar
             </span>
 
-            <span className="block text-white">
-              Behera
-            </span>
+           
 
           </motion.h1>
 
@@ -138,7 +151,12 @@ export default function HeroSection() {
 
             <button className="px-8 py-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl hover:border-cyan-400 transition-all duration-300 flex items-center gap-2">
 
-              <Download size={18} />
+
+   
+  
+              <Download
+              
+               size={18} />
               Download Resume
 
             </button>
@@ -152,7 +170,7 @@ export default function HeroSection() {
 
           </motion.div>
 
-          {/* Social */}
+          {/* Social Icons */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -160,13 +178,23 @@ export default function HeroSection() {
             className="flex gap-5 mt-10"
           >
 
-            {[Github, Linkedin, Mail].map((Icon, index) => (
+            {socialLinks.map(({ Icon, link }, index) => (
 
               <motion.a
                 whileHover={{ scale: 1.1, y: -5 }}
                 key={index}
-                href="#"
-                className="p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl shadow-[0_0_30px_rgba(168,85,247,0.15)] hover:border-purple-500"
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
+                  p-4
+                  rounded-2xl
+                  bg-white/5
+                  border border-white/10
+                  backdrop-blur-xl
+                  shadow-[0_0_30px_rgba(168,85,247,0.15)]
+                  hover:border-purple-500
+                "
               >
                 <Icon size={22} />
               </motion.a>
