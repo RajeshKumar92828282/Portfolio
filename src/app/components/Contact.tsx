@@ -14,7 +14,50 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+     try {
+      await axios.post(
+        "https://api.elasticemail.com/v2/email/send",
+        null,
+        {
+          params: {
+            apikey: "19208C2BB7D10ABBE152C5A5BF9B3C3E75E37AAF9FF2636E47B4B5FC857932756118F43C95F69A6804B9FCD6FBB7FEA4",
+
+            subject: "New Portfolio Contact",
+
+            from: "cybers93992@gmail.com",
+
+            to: "cybers93992@gmail.com",
+
+            bodyHtml: `
+              <h2>New Portfolio Contact Message</h2>
+
+              <p><strong>Name:</strong> ${formData.name}</p>
+
+              <p><strong>Email:</strong> ${formData.email}</p>
+
+              <p><strong>Message:</strong></p>
+
+              <p>${formData.message}</p>
+            `,
+
+            isTransactional: true,
+          },
+        }
+      );
+
+      alert("Message Sent Successfully!");
+
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error(error);
+      alert("Failed to send message");
+    }
+  };
+
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -28,9 +71,9 @@ export default function Contact() {
     {
       name: "Email",
       icon: Mail,
-      href: "mailto:rajesh@example.com",
+      href: "mailto:rb3302436@gmail.com",
       color: "from-red-500 to-orange-500",
-      handle: "rajesh@example.com",
+      handle: "rb3302436@gmail.com",
     },
     {
       name: "GitHub",

@@ -7,23 +7,87 @@ export default function Certifications() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
-  const certifications = [
-    {
-      title: "Oracle Cloud Infrastructure 2025 Certified Developer Professional",
-      issuer: "Oracle",
-      date: "2025",
-      icon: "☁️",
-      gradient: "from-red-600 to-orange-600",
-    },
-    {
-      title: "JPMorgan Chase Software Engineering Virtual Experience",
-      issuer: "JPMorgan Chase & Co.",
-      date: "2024",
-      icon: "💼",
-      gradient: "from-blue-600 to-cyan-600",
-    },
-  ];
+ const certifications = [
+  {
+    title: "Oracle Cloud Infrastructure 2025 Certified Developer Professional",
+    issuer: "Oracle",
+    date: "2025",
+    icon: "☁️",
+    gradient: "from-red-600 to-orange-600",
+  },
 
+  {
+    title: "JPMorgan Chase Software Engineering Virtual Experience",
+    issuer: "JPMorgan Chase & Co.",
+    date: "2025",
+    icon: "💼",
+    gradient: "from-blue-600 to-cyan-600",
+  },
+
+  {
+    title: "AWS Solutions Architecture Job Simulation",
+    issuer: "AWS & Forage",
+    date: "2026",
+    icon: "☁️",
+    gradient: "from-orange-600 to-yellow-600",
+  },
+
+  {
+    title: "TATA Cybersecurity Analyst Job Simulation",
+    issuer: "TATA & Forage",
+    date: "2026",
+    icon: "🛡️",
+    gradient: "from-blue-700 to-cyan-600",
+  },
+
+  {
+    title: "Deloitte Cyber Job Simulation",
+    issuer: "Deloitte & Forage",
+    date: "2025",
+    icon: "🔐",
+    gradient: "from-green-600 to-emerald-600",
+  },
+
+  {
+    title: "Back-End Development Virtual Internship",
+    issuer: "QSkill & SR India",
+    date: "2026",
+    icon: "⚙️",
+    gradient: "from-purple-600 to-pink-600",
+  },
+
+  {
+    title: "Cyber Security Workshop",
+    issuer: "Thetechunique Academy",
+    date: "2024",
+    icon: "🧠",
+    gradient: "from-indigo-600 to-blue-600",
+  },
+
+  {
+    title: "National Coding League 2024",
+    issuer: "Scaler School of Technology",
+    date: "2024",
+    icon: "💻",
+    gradient: "from-violet-600 to-fuchsia-600",
+  },
+
+  {
+    title: "Google Developer Groups Hackathon Participant",
+    issuer: "Google Developer Groups",
+    date: "2025",
+    icon: "🚀",
+    gradient: "from-cyan-600 to-blue-600",
+  },
+
+  {
+    title: "AI & Prompt Engineering",
+    issuer: "DeepLearning.AI",
+    date: "2025",
+    icon: "🤖",
+    gradient: "from-violet-600 to-fuchsia-600",
+  },
+];
   const achievements = [
     {
       title: "1st Position - Code Golf Competition 2025",

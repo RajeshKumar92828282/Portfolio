@@ -93,7 +93,7 @@ export default function Footer() {
           <div>
             <h3 className="font-bold mb-4 text-white">Get In Touch</h3>
             <ul className="space-y-2 text-gray-400 text-sm">
-              <li>Email: rajesh@example.com</li>
+              <li>Email: rb3302436@gmail.com</li>
               <li>Location: India</li>
               <li>Available for freelance work</li>
             </ul>
