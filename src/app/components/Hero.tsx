@@ -247,7 +247,7 @@ export default function HeroSection() {
 
             {/* Image */}
             <motion.img
-              src="/src/imports/d50650c9-e4da-4a02-95d6-adddcf17e0a5.png"
+              src="/src/imports/Gemini_Generated_Image_nbrk09nbrk09nbrk.png"
               alt="Rajesh Kumar"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
