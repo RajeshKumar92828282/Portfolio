@@ -9,7 +9,7 @@ export default function Projects() {
 
   const isInView = useInView(ref, {
     once: true,
-    amount: 0.2,
+    margin: "-100px",
   });
 
   const projects = [
@@ -29,8 +29,6 @@ export default function Projects() {
         "Stylus WASM",
         "Arbitrum",
         "IPFS",
-        "TensorFlow",
-        "LLMs",
       ],
 
       github:
@@ -177,7 +175,7 @@ export default function Projects() {
 
       className="
         relative
-        pt-32
+        pt-28
         pb-24
         md:pt-32
         md:pb-32
@@ -200,17 +198,16 @@ export default function Projects() {
         <motion.div
           initial={{
             opacity: 0,
-            y: 30,
+            y: 15,
           }}
 
-          animate={
-            isInView
-              ? { opacity: 1, y: 0 }
-              : { opacity: 0, y: 30 }
-          }
+          animate={{
+            opacity: 1,
+            y: 0,
+          }}
 
           transition={{
-            duration: 0.6,
+            duration: 0.4,
           }}
 
           className="text-center mb-16"
@@ -242,22 +239,21 @@ export default function Projects() {
 
               initial={{
                 opacity: 0,
-                y: 40,
+                y: 15,
               }}
 
-              animate={
-                isInView
-                  ? { opacity: 1, y: 0 }
-                  : { opacity: 0, y: 40 }
-              }
+              animate={{
+                opacity: 1,
+                y: 0,
+              }}
 
               transition={{
-                duration: 0.6,
-                delay: index * 0.1,
+                duration: 0.4,
+                delay: index * 0.05,
               }}
 
               whileHover={{
-                y: -10,
+                y: -8,
               }}
 
               className="
@@ -271,7 +267,7 @@ export default function Projects() {
                 border-white/10
                 hover:border-cyan-400/50
                 transition-all
-                duration-500
+                duration-300
                 shadow-[0_0_40px_rgba(168,85,247,0.15)]
               "
             >
@@ -287,9 +283,9 @@ export default function Projects() {
                     w-full
                     h-full
                     object-cover
-                    group-hover:scale-110
+                    group-hover:scale-105
                     transition-transform
-                    duration-700
+                    duration-500
                   "
                 />
 
@@ -297,7 +293,7 @@ export default function Projects() {
 
               </div>
 
-              {/* Card Content */}
+              {/* Content */}
               <div className="relative p-6">
 
                 <h3
@@ -415,24 +411,6 @@ export default function Projects() {
                 </div>
 
               </div>
-
-              {/* Hover Glow */}
-              <div
-                className={`
-                  absolute
-                  -top-20
-                  -right-20
-                  w-40
-                  h-40
-                  bg-gradient-to-br
-                  ${project.gradient}
-                  blur-3xl
-                  opacity-0
-                  group-hover:opacity-20
-                  transition-opacity
-                  duration-500
-                `}
-              />
 
             </motion.div>
 
