@@ -149,7 +149,9 @@ export default function HeroSection() {
               View Projects
             </button>
 
-            <button className="px-8 py-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl hover:border-cyan-400 transition-all duration-300 flex items-center gap-2">
+            <button 
+             onClick={() => window.open("/src/imports/Rajesh_Resumee.pdf")}
+            className="px-8 py-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl hover:border-cyan-400 transition-all duration-300 flex items-center gap-2">
 
 
    
