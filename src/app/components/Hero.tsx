@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
+import heroImage from '../../assets/img.png';
 
 import {
   Github,
@@ -247,7 +248,7 @@ export default function HeroSection() {
 
             {/* Image */}
             <motion.img
-              src="/images/img.png"
+              src={heroImage}
               alt="Rajesh Kumar"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
