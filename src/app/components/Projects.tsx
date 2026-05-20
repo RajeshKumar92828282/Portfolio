@@ -25,7 +25,7 @@ export default function Projects() {
       "LLMs",
       "Hugging Face",
     ],
-    github: "#",
+    github: "https://github.com/RajeshKumar92828282/neurovault",
     demo: "#",
     gradient: "from-violet-600 to-fuchsia-600",
   },
@@ -49,8 +49,8 @@ export default function Projects() {
     image:
       "https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
     tags: ["React", "Firebase", "AI", "Tailwind CSS"],
-    github: "#",
-    demo: "#",
+    github: "https://github.com/RajeshKumar92828282/GDG_HACKATHON",
+    demo: "https://gdg-hackathon-alpha.vercel.app/",
     gradient: "from-cyan-600 to-blue-600",
   },
 
