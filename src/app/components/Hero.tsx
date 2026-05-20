@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
-import heroImage from '../../assets/img.png';
+import heroImage from '../../assets/img.png'
 
 import {
   Github,
