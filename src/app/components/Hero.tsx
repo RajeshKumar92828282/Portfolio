@@ -247,7 +247,7 @@ export default function HeroSection() {
 
             {/* Image */}
             <motion.img
-              src="/public/images/photo.png"
+              src="/images/photo.png"
               alt="Rajesh Kumar"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
