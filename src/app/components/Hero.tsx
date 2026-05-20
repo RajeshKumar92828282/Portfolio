@@ -150,7 +150,7 @@ export default function HeroSection() {
             </button>
 
             <button 
-             onClick={() => window.open("/src/imports/Rajesh_Resumee.pdf")}
+             onClick={() => window.open("/Rajesh_Resumee.pdf")}
             className="px-8 py-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl hover:border-cyan-400 transition-all duration-300 flex items-center gap-2">
 
 
@@ -247,7 +247,7 @@ export default function HeroSection() {
 
             {/* Image */}
             <motion.img
-              src="/src/imports/Gemini_Generated_Image_nbrk09nbrk09nbrk.png"
+              src="/public/images/photo.png"
               alt="Rajesh Kumar"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
