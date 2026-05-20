@@ -59,7 +59,7 @@ export default function Certifications() {
   {
     title: "Cyber Security Workshop",
     issuer: "Thetechunique Academy",
-    date: "2024",
+    date: "2025",
     icon: "🧠",
     gradient: "from-indigo-600 to-blue-600",
   },
@@ -75,7 +75,7 @@ export default function Certifications() {
   {
     title: "Google Developer Groups Hackathon Participant",
     issuer: "Google Developer Groups",
-    date: "2025",
+    date: "2026",
     icon: "🚀",
     gradient: "from-cyan-600 to-blue-600",
   },
