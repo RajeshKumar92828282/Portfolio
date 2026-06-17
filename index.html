@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── Page Title ─────────────────────────────────────────── -->
+  <title>Abhinav Version — Web Development Agency</title>
+
+  <!-- ── Google Fonts: Inter + Plus Jakarta Sans ────────────── -->
+  <!-- Inter = body text | Plus Jakarta Sans = headings & logo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- ── Favicon: Blue square with white "A" ────────────────── -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- ── Main Stylesheet ────────────────────────────────────── -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       NAVIGATION — Sticky top bar with blur on scroll
+       Contains: Logo | Menu Links | CTA Button | Mobile Hamburger
+       ═══════════════════════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+
+      <!-- Logo: "AV" monogram (blue rounded square) + brand name -->
+      <a href="#home" class="nav-logo">
+        <span class="logo-mark">
+          <!-- SVG Logo: Blue #2563EB rounded rect + white "AV" text -->
+          <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="38" height="38" rx="11" fill="#2563EB"/>
+            <!-- "AV" text centered inside the blue square -->
+            <text x="19" y="26" font-family="Plus Jakarta Sans, Inter, system-ui" font-size="13" font-weight="800" fill="white" text-anchor="middle" letter-spacing="-0.3">AV</text>
+          </svg>
+        </span>
+        <!-- Brand name: "Abhinav" black + "Version" blue accent -->
+        <span class="logo-text">Abhinav <span class="logo-accent">Version</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu Links -->
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home"      class="nav-link active">Home</a></li>
+        <li><a href="#about"     class="nav-link">About</a></li>
+        <li><a href="#services"  class="nav-link">Services</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#process"   class="nav-link">Process</a></li>
+        <li><a href="#faq"       class="nav-link">FAQ</a></li>
+        <li><a href="#contact"   class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- CTA Button (hidden on mobile) -->
+      <a href="#contact" class="btn-nav">Let's Talk</a>
+
+      <!-- Hamburger Button (visible only on mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </nav>
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       HERO SECTION — Full-height landing screen
+       Left: Headline, subtext, CTA buttons, stats
+       Right: CSS browser mockup with floating badges
+       ═══════════════════════════════════════════════════════════ -->
+  <section class="hero" id="home">
+
+    <!-- Soft blue background glow orbs (decorative, CSS blurred circles) -->
+    <div class="hero-bg-orb orb-1"></div>
+    <div class="hero-bg-orb orb-2"></div>
+
+    <div class="hero-container">
+
+      <!-- LEFT: Hero Content -->
+      <div class="hero-content">
+
+        <!-- Availability badge with green pulsing dot -->
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for new projects
+        </div>
+
+        <!-- Main Hero Headline (H1 — most important heading on page) -->
+        <h1 class="hero-headline">
+          Building Modern Websites<br />
+          That Help Local Businesses<br />
+          <span class="headline-accent">Grow Online</span>
+        </h1>
+
+        <!-- Subheading paragraph below headline -->
+        <p class="hero-sub">
+          We design fast, responsive, and conversion-focused websites that help
+          businesses establish a strong online presence and build lasting customer trust.
+        </p>
+
+        <!-- Two CTA Buttons: Primary (blue) + Secondary (outline) -->
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">
+            Get Free Consultation
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#portfolio" class="btn-portfolio-fancy">
+            <span class="btn-fancy-icon">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M2 7.5h11M8.5 3l4.5 4.5L8.5 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="btn-fancy-text">View Portfolio</span>
+            <span class="btn-fancy-shimmer"></span>
+          </a>
+        </div>
+
+        <!-- Three quick stats below buttons -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">4+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">3</span>
+            <span class="stat-label">Team Members</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Quality Focused</span>
+          </div>
+        </div>
+
+      </div><!-- /hero-content -->
+
+      <!-- RIGHT: CSS-only Browser Mockup (no image used) -->
+      <div class="hero-visual">
+        <div class="mockup-browser">
+
+          <!-- Browser chrome bar with traffic lights + URL bar -->
+          <div class="mockup-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <div class="url-bar">
+              <svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M6 1a5 5 0 100 10A5 5 0 006 1zm0 9A4 4 0 116 2a4 4 0 010 8zm.5-6.5h-1v3l2.5 1.5.5-.87-2-1.18V3.5z" fill="#999"/></svg>
+              abhinavversion.com
+            </div>
+          </div>
+
+          <!-- Fake website screen content (skeleton UI) -->
+          <div class="mockup-screen">
+            <!-- Fake nav inside mockup -->
+            <div class="ms-nav">
+              <div class="ms-logo-bar"></div>
+              <div class="ms-nav-links">
+                <div class="ms-link"></div>
+                <div class="ms-link"></div>
+                <div class="ms-link"></div>
+                <div class="ms-btn"></div>
+              </div>
+            </div>
+            <!-- Fake hero area inside mockup -->
+            <div class="ms-hero-area">
+              <div class="ms-hero-text">
+                <div class="ms-h1 long"></div>
+                <div class="ms-h1 medium"></div>
+                <div class="ms-p"></div>
+                <div class="ms-p short"></div>
+                <div class="ms-actions">
+                  <div class="ms-action-btn primary"></div>
+                  <div class="ms-action-btn secondary"></div>
+                </div>
+              </div>
+              <!-- Fake analytics card inside mockup -->
+              <div class="ms-hero-card">
+                <div class="ms-card-header">
+                  <div class="ms-avatar"></div>
+                  <div>
+                    <div class="ms-card-line long"></div>
+                    <div class="ms-card-line short"></div>
+                  </div>
+                </div>
+                <div class="ms-card-graph">
+                  <div class="ms-bar" style="height:40%"></div>
+                  <div class="ms-bar" style="height:65%"></div>
+                  <div class="ms-bar" style="height:50%"></div>
+                  <div class="ms-bar" style="height:80%"></div>
+                  <div class="ms-bar" style="height:70%"></div>
+                  <div class="ms-bar" style="height:90%"></div>
+                </div>
+                <div class="ms-card-stat">
+                  <div class="ms-stat-dot"></div>
+                  <div class="ms-card-line medium"></div>
+                </div>
+              </div>
+            </div>
+          </div><!-- /mockup-screen -->
+        </div><!-- /mockup-browser -->
+
+        <!-- Subtle glow behind the mockup -->
+        <div class="mockup-glow"></div>
+
+        <!-- Floating label badges (animated up/down) -->
+        <div class="float-badge badge-top">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" fill="#22C55E" fill-opacity=".15"/><circle cx="7" cy="7" r="3" fill="#22C55E"/></svg>
+          <span>100% Mobile Ready</span>
+        </div>
+        <div class="float-badge badge-bot">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1l1.6 3.3L12 5l-2.5 2.4.6 3.4L7 9.3l-3.1 1.5.6-3.4L2 5l3.4-.7L7 1z" fill="#2563EB"/></svg>
+          <span>Top Google Rankings</span>
+        </div>
+
+      </div><!-- /hero-visual -->
+    </div><!-- /hero-container -->
+
+    <!-- Scroll down indicator (animated vertical line + label) -->
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+
+  </section><!-- /hero -->
+
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       ABOUT SECTION — Team intro, photo placeholder, stats
+       Layout: Left = photo visual | Right = text content
+       ═══════════════════════════════════════════════════════════ -->
+  <section class="about section" id="about">
+    <div class="container about-grid">
+
+      <!-- LEFT: Photo placeholder + floating cards -->
+      <div class="about-visual">
+
+        <!-- Photo frame (replace [YOUR PHOTO] with real team photo later) -->
+        <div class="photo-frame">
+          <div class="photo-placeholder">
+            <!-- Default person/team icon -->
+            <img src="./teamphoto.jpeg" alt="Team Photo" width="400" height="400" />
+            <p>Team Photo</p>
+          </div>
+        </div>
+
+        <!-- Floating "Fast Delivery" card — bottom right of photo -->
+        <div class="about-card floating-card">
+          <div class="about-card-icon">⚡</div>
+          <div>
+            <div class="about-card-title">Fast Delivery</div>
+            <div class="about-card-sub">Projects on time, every time</div>
+          </div>
+        </div>
+
+        <!-- Blue badge — top right of photo -->
+        <div class="exp-badge">
+          <span class="exp-num">100%</span>
+          <span class="exp-text">Quality<br/>Focused</span>
+        </div>
+
+      </div><!-- /about-visual -->
+
+      <!-- RIGHT: About text content -->
+      <div class="about-content">
+
+        <!-- Small eyebrow label above heading -->
+        <span class="section-eyebrow">About Us</span>
+
+        <!-- Section heading -->
+        <h2 class="section-heading">Meet the Team Behind <span class="accent">Abhinav Version</span></h2>
+
+        <!-- ── TEAM MEMBER CARDS ──────────────────────────────── -->
+        <!-- Three team members displayed as mini-cards with role -->
+        <div class="team-cards">
+
+          <!-- Team Member 1: Management & Sales -->
+          <div class="team-member-card">
+            <div class="tm-avatar">AV</div>
+            <div class="tm-info">
+              <div class="tm-name">Abhinav Verma</div>
+              <div class="tm-role">Management &amp; Sales</div>
+              <p class="tm-desc">Handles client communication, project management, and business development, ensuring every project runs smoothly from start to finish.</p>
+            </div>
+          </div>
+
+         <!-- Team Member 2: Web Developer -->
+<div class="team-member-card">
+  <div class="tm-avatar">AD</div>
+  <div class="tm-info">
+    <div class="tm-name">Abhinav Dash</div>
+    <div class="tm-role">Fullstack Developer</div>
+    <div class="tm-role">CEO - Tech Magnitude</div>
+    <p class="tm-desc">
+      Specializes in building modern, responsive, and high-performance websites 
+      with a strong focus on user experience and functionality.
+    </p>
+  </div>
+</div>
+
+
+          <!-- Team Member 3: Web Developer -->
+          <div class="team-member-card">
+            <div class="tm-avatar">RA</div>
+            <div class="tm-info">
+              <div class="tm-name">Rajesh Kumar</div>
+              <div class="tm-role">Fullstack developer</div>
+              <p class="tm-desc">Focused on developing clean, scalable, and reliable web solutions while maintaining quality, performance, and attention to detail.</p>
+            </div>
+          </div>
+
+        </div><!-- /team-cards -->
+
+        <!-- Team tagline paragraph -->
+        <p class="about-text about-tagline">
+          Together, we combine technical expertise and business strategy to deliver professional digital solutions that help businesses grow online.
+        </p>
+
+        <!-- Additional About paragraph (skills & tech stack) -->
+        <p class="about-text">
+          We build modern, responsive, and high-performance websites using the latest technologies and design standards. Our expertise includes custom website development, landing pages, business websites, and Google Business Profile (GMB) optimization. We enjoy working with startups, local businesses, and growing brands — delivering fast, secure, SEO-friendly websites with a strong focus on quality and client satisfaction.
+        </p>
+
+        <!-- Quick stats row -->
+        <div class="about-stats">
+          <div class="astat">
+            <span class="astat-num">4+</span>
+            <span class="astat-label">Projects Built</span>
+          </div>
+          <div class="astat">
+            <span class="astat-num">3</span>
+            <span class="astat-label">Team Members</span>
+          </div>
+          <div class="astat">
+            <span class="astat-num">Post</span>
+            <span class="astat-label">Launch Support</span>
+          </div>
+        </div>
+
+        <!-- CTA Button -->
+        <a href="#contact" class="btn-primary">Work With Us
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+
+      </div><!-- /about-content -->
+    </div><!-- /about-grid -->
+  </section><!-- /about -->
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SERVICES SECTION — 5 service cards in a grid
+       Each card: icon + title + description + "Learn More" link
+       ═══════════════════════════════════════════════════════════ -->
+  <section class="services section" id="services">
+    <div class="container">
+
+      <!-- Section header (centered) -->
+      <div class="section-header">
+        <span class="section-eyebrow">Services</span>
+        <h2 class="section-heading">What We Offer</h2>
+        <p class="section-sub">Everything your business needs to stand out online — built with precision and purpose.</p>
+      </div>
+
+      <!-- Services grid: 3 columns on desktop, 2 on tablet, 1 on mobile -->
+      <div class="services-grid">
+
+        <!-- Service Card 1: Website Development -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="#2563EB" stroke-width="1.5"/><path d="M8 21h8M12 17v4" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="service-title">Website Development</h3>
+          <p class="service-desc">Custom-built websites that are fast, secure, and designed to convert visitors into paying customers.</p>
+          <a href="#contact" class="service-link">Learn More <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+        <!-- Service Card 2: Landing Pages -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="#2563EB" stroke-width="1.5"/><path d="M9 9h6M9 12h4" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="service-title">Landing Pages</h3>
+          <p class="service-desc">High-converting landing pages built to capture leads, drive sales, and grow your business pipeline.</p>
+          <a href="#contact" class="service-link">Learn More <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+        <!-- Service Card 3: Business Website -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" stroke="#2563EB" stroke-width="1.5"/><path d="M9 22V12h6v10" stroke="#2563EB" stroke-width="1.5"/></svg>
+          </div>
+          <h3 class="service-title">Business Website</h3>
+          <p class="service-desc">Professional multi-page websites that tell your brand story and build trust with every visitor.</p>
+          <a href="#contact" class="service-link">Learn More <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+        <!-- Service Card 4: Website Redesign -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z" stroke="#2563EB" stroke-width="1.5"/></svg>
+          </div>
+          <h3 class="service-title">Website Redesign</h3>
+          <p class="service-desc">Transform your outdated website into a modern, high-performance digital experience that reflects your brand.</p>
+          <a href="#contact" class="service-link">Learn More <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+        <!-- Service Card 5: Google Business Profile (featured/highlighted card) -->
+        <div class="service-card featured">
+          <!-- "Most Popular" badge in top-right corner -->
+          <div class="service-badge">Most Popular</div>
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#2563EB" stroke-width="1.5"/><path d="M12 8v4l3 3" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="service-title">Google Business Profile Optimization</h3>
+          <p class="service-desc">Get found on Google Maps and local searches. We optimize your profile to attract more customers in your area.</p>
+          <a href="#contact" class="service-link">Learn More <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+      </div><!-- /services-grid -->
+    </div>
+  </section><!-- /services -->
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       PORTFOLIO SECTION — 4 real project cards (2x2 grid)
+       Each card: tech tags + preview visual + title + desc + link
+       ═══════════════════════════════════════════════════════════ -->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+
+      <!-- Section header -->
+      <div class="section-header">
+        <span class="section-eyebrow">Portfolio</span>
+        <h2 class="section-heading">Our Work</h2>
+        <p class="section-sub">Real projects built with modern technologies — fast, responsive, and production-ready.</p>
+      </div>
+
+      <!-- Portfolio grid: 2 columns on desktop, 1 on mobile -->
+      <div class="portfolio-grid portfolio-grid-2col">
+
+        <!-- ── PROJECT 1: EduPathway ─────────────────────────── -->
+        <div class="project-card project-card-large">
+          <div class="project-img">
+            <!-- Color-coded placeholder (green = education theme) -->
+            <div class="project-img-placeholder edu">
+              <!-- Tech stack tags displayed inside the image area -->
+              <div class="proj-tags">
+                <span class="proj-tag">React</span>
+                <span class="proj-tag">Next.js</span>
+                <span class="proj-tag">Tailwind CSS</span>
+              </div>
+              <!-- Project icon (decorative) -->
+              <div class="proj-icon">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M20 8L4 16l16 8 16-8-16-8z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/><path d="M4 24l16 8 16-8" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity=".6"/><path d="M4 20l16 8 16-8" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity=".3"/></svg>
+              </div>
+            </div>
+            <!-- Hover overlay with "View Project" button -->
+            <div class="project-overlay">
+              <a href="https://undo-school-lake.vercel.app/" target="_blank" rel="noopener" class="btn-view">
+                View Live Project
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+          <!-- Project text info below image -->
+          <div class="project-info">
+            <span class="project-cat">Education Platform</span>
+            <h3 class="project-title">EduPathway</h3>
+            <p class="project-desc">An educational platform designed to enhance learning outcomes through interactive content and personalized learning paths.</p>
+            <a href="https://undo-school-lake.vercel.app/" target="_blank" rel="noopener" class="project-link">
+              undo-school-lake.vercel.app
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 9.5l7-7M9.5 2.5H4M9.5 2.5v5.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- ── PROJECT 2: Freelance SaaS ─────────────────────── -->
+        <div class="project-card project-card-large">
+          <div class="project-img">
+            <!-- Color-coded placeholder (purple = SaaS/business theme) -->
+            <div class="project-img-placeholder saas">
+              <div class="proj-tags">
+                <span class="proj-tag">React</span>
+                <span class="proj-tag">SaaS Dashboard</span>
+                <span class="proj-tag">Vercel</span>
+              </div>
+              <div class="proj-icon">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="6" y="8" width="28" height="24" rx="3" stroke="white" stroke-width="1.5"/><path d="M6 14h28" stroke="white" stroke-width="1.5"/><path d="M13 20h14M13 25h10" stroke="white" stroke-width="1.3" stroke-linecap="round" opacity=".6"/></svg>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <a href="https://freelacer-saa-s.vercel.app/dashboard" target="_blank" rel="noopener" class="btn-view">
+                View Live Project
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-cat">SaaS / Business Tool</span>
+            <h3 class="project-title">Freelance SaaS</h3>
+            <p class="project-desc">A centralized mission control for independent professionals to scale their business with real-time financial insights and automated client management.</p>
+            <a href="https://freelacer-saa-s.vercel.app/dashboard" target="_blank" rel="noopener" class="project-link">
+              freelacer-saa-s.vercel.app
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 9.5l7-7M9.5 2.5H4M9.5 2.5v5.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- ── PROJECT 3: Grocery E-Commerce ─────────────────── -->
+        <div class="project-card project-card-large">
+          <div class="project-img">
+            <!-- Color-coded placeholder (orange = grocery/food theme) -->
+            <div class="project-img-placeholder grocery">
+              <div class="proj-tags">
+                <span class="proj-tag">React</span>
+                <span class="proj-tag">Zustand</span>
+                <span class="proj-tag">Tailwind CSS</span>
+              </div>
+              <div class="proj-icon">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="16" cy="32" r="2.5" stroke="white" stroke-width="1.5"/><circle cx="30" cy="32" r="2.5" stroke="white" stroke-width="1.5"/><path d="M6 8h4l5 16h15l4-10H13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <a href="https://grocery-website-gules-chi.vercel.app/" target="_blank" rel="noopener" class="btn-view">
+                View Live Project
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-cat">E-Commerce</span>
+            <h3 class="project-title">Grocery E-Commerce</h3>
+            <p class="project-desc">A high-velocity grocery commerce platform emphasizing friction-free shopping and lightweight state management with React + Zustand.</p>
+            <a href="https://grocery-website-gules-chi.vercel.app/" target="_blank" rel="noopener" class="project-link">
+              grocery-website-gules-chi.vercel.app
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 9.5l7-7M9.5 2.5H4M9.5 2.5v5.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- ── PROJECT 4: FinVault Financial Dashboard ─────────── -->
+        <div class="project-card project-card-large">
+          <div class="project-img">
+            <!-- Color-coded placeholder (blue = finance/analytics theme) -->
+            <div class="project-img-placeholder finance">
+              <div class="proj-tags">
+                <span class="proj-tag">React</span>
+                <span class="proj-tag">Vite</span>
+                <span class="proj-tag">Tailwind CSS</span>
+              </div>
+              <div class="proj-icon">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="6" y="6" width="28" height="28" rx="4" stroke="white" stroke-width="1.5"/><path d="M12 26l6-8 6 4 6-10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity=".8"/><path d="M12 30h16" stroke="white" stroke-width="1.3" stroke-linecap="round" opacity=".4"/></svg>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <a href="https://financial-ui-dashboard-alpha.vercel.app/" target="_blank" rel="noopener" class="btn-view">
+                View Live Project
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-cat">Analytics Dashboard</span>
+            <h3 class="project-title">FinVault — Financial Dashboard</h3>
+            <p class="project-desc">A high-performance financial analytics dashboard enabling real-time transaction tracking, intelligent insights, and role-based access control.</p>
+            <a href="https://financial-ui-dashboard-alpha.vercel.app/" target="_blank" rel="noopener" class="project-link">
+              financial-ui-dashboard-alpha.vercel.app
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 9.5l7-7M9.5 2.5H4M9.5 2.5v5.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div><!-- /portfolio-grid -->
+    </div>
+  </section><!-- /portfolio -->
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       PROCESS SECTION — 6-step timeline (3x2 grid)
+       Shows: Step number + icon + title + description
+       ═══════════════════════════════════════════════════════════ -->
+  <section class="process section" id="process">
+    <div class="container">
+
+      <!-- Section header -->
+      <div class="section-header">
+        <span class="section-eyebrow">Process</span>
+        <h2 class="section-heading">How We Work</h2>
+        <p class="section-sub">A clear, transparent process from first call to launch day.</p>
+      </div>
+
+      <!-- Process steps track: 3 columns desktop, 2 tablet, 1 mobile -->
+      <div class="process-track">
+
+        <!-- Step 1 -->
+        <div class="process-step" data-step="01">
+          <div class="step-node">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2a8 8 0 100 16A8 8 0 0010 2zm0 3.5v5h4" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <div class="step-content">
+            <h4 class="step-title">Discovery Call</h4>
+            <p class="step-desc">We discuss your goals, target audience, and vision to understand exactly what your business needs.</p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="process-step" data-step="02">
+          <div class="step-node">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 6h14M3 10h10M3 14h7" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <div class="step-content">
+            <h4 class="step-title">Planning</h4>
+            <p class="step-desc">We map out the site structure, content plan, and timeline so you know exactly what to expect and when.</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="process-step" data-step="03">
+          <div class="step-node">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="3" width="14" height="14" rx="2" stroke="#2563EB" stroke-width="1.5"/><path d="M7 10l2 2 4-4" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="step-content">
+            <h4 class="step-title">Design</h4>
+            <p class="step-desc">We create a clean, professional design that matches your brand and is optimized for conversions.</p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="process-step" data-step="04">
+          <div class="step-node">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7 8l-4 2 4 2M13 8l4 2-4 2M11 6l-2 8" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="step-content">
+            <h4 class="step-title">Development</h4>
+            <p class="step-desc">We build your site with clean, fast code — mobile-first, SEO-ready, and built to perform.</p>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="process-step" data-step="05">
+          <div class="step-node">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="#2563EB" stroke-width="1.5"/><path d="M7 10l2 2 4-4" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="step-content">
+            <h4 class="step-title">Testing & Review</h4>
+            <p class="step-desc">We rigorously test across devices and browsers. You review, give feedback, and we perfect every detail.</p>
+          </div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="process-step" data-step="06">
+          <div class="step-node">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2l2 5h5l-4 3 1.5 5L10 12l-4.5 3L7 10 3 7h5z" stroke="#2563EB" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="step-content">
+            <h4 class="step-title">Launch</h4>
+            <p class="step-desc">We go live! Your new website is deployed, domain connected, and ready to bring in customers.</p>
+          </div>
+        </div>
+
+      </div><!-- /process-track -->
+    </div>
+  </section><!-- /process -->
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       WHY CHOOSE US — 6 icon cards in 3x2 grid
+       USP highlights: speed, mobile, SEO, design, performance, support
+       ═══════════════════════════════════════════════════════════ -->
+  <section class="why section">
+    <div class="container">
+
+      <!-- Section header -->
+      <div class="section-header">
+        <span class="section-eyebrow">Why Choose Us</span>
+        <h2 class="section-heading">The Abhinav Version Difference</h2>
+        <p class="section-sub">We don't just build websites. We build digital assets that work for your business 24/7.</p>
+      </div>
+
+      <!-- Why cards grid -->
+      <div class="why-grid">
+
+        <!-- Card 1: Fast Delivery -->
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 2l1.8 3.6L17 6.3l-3 2.9.7 4L11 11l-3.7 2.2.7-4L5 6.3l4.2-.7L11 2z" stroke="#2563EB" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </div>
+          <h4>Fast Delivery</h4>
+          <p>Get your website live within the agreed timeline — no delays, no excuses.</p>
+        </div>
+
+        <!-- Card 2: Mobile Responsive -->
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="2" y="5" width="18" height="12" rx="2" stroke="#2563EB" stroke-width="1.5"/><path d="M7 18h8" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/><path d="M6 9h10M6 12h6" stroke="#2563EB" stroke-width="1" stroke-linecap="round" opacity=".5"/></svg>
+          </div>
+          <h4>Mobile Responsive</h4>
+          <p>Every website we build looks and works perfectly on every screen size.</p>
+        </div>
+
+        <!-- Card 3: SEO Friendly -->
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="9" stroke="#2563EB" stroke-width="1.5"/><path d="M11 6v5l3 3" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h4>SEO Friendly</h4>
+          <p>Built with the right structure, speed, and metadata so Google can find you first.</p>
+        </div>
+
+        <!-- Card 4: Modern UI -->
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="5" y="5" width="12" height="12" rx="3" stroke="#2563EB" stroke-width="1.5"/><path d="M9 11h4M11 9v4" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h4>Modern UI</h4>
+          <p>Clean, premium designs that make a powerful first impression every time.</p>
+        </div>
+
+        <!-- Card 5: Performance Optimized -->
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 2C6 2 2 6 2 11s4 9 9 9 9-4 9-9" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/><path d="M16 2l4 4-8 8-4-2 8-10z" stroke="#2563EB" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </div>
+          <h4>Performance Optimized</h4>
+          <p>Fast loading websites that don't lose visitors due to slow speeds.</p>
+        </div>
+
+        <!-- Card 6: Ongoing Support -->
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 20s-8-4.5-8-11.5a8 8 0 0116 0C19 15.5 11 20 11 20z" stroke="#2563EB" stroke-width="1.5"/><path d="M11 8v4M11 14v.5" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h4>Ongoing Support</h4>
+          <p>We're here after launch. Updates, fixes, and guidance whenever you need it.</p>
+        </div>
+
+      </div><!-- /why-grid -->
+    </div>
+  </section><!-- /why -->
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       FAQ SECTION — Accordion with 8 Q&A items
+       Click a question to expand/collapse the answer
+       ═══════════════════════════════════════════════════════════ -->
+  <section class="faq section" id="faq">
+    <div class="container faq-container">
+
+      <!-- Section header -->
+      <div class="section-header">
+        <span class="section-eyebrow">FAQ</span>
+        <h2 class="section-heading">Common Questions</h2>
+        <p class="section-sub">Answers to what most clients ask before getting started.</p>
+      </div>
+
+      <!-- FAQ accordion list -->
+      <div class="faq-list">
+
+        <!-- FAQ Item 1 -->
+        <div class="faq-item">
+          <button class="faq-q">
+            What types of websites do you build?
+            <span class="faq-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 7l5 5 5-5" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </button>
+          <div class="faq-a"><p>We build modern business websites, landing pages, portfolio websites, and custom websites for local businesses.</p></div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="faq-item">
+          <button class="faq-q">
+            How long does it take to build a website?
+            <span class="faq-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 7l5 5 5-5" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </button>
+          <div class="faq-a"><p>Most business websites are completed within 7–14 business days depending on the project requirements.</p></div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="faq-item">
+          <button class="faq-q">
+            Will my website work on mobile devices?
+            <span class="faq-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 7l5 5 5-5" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </button>
+          <div class="faq-a"><p>Yes. Every website is fully responsive and optimized for desktops, tablets, and smartphones.</p></div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="faq-item">
+          <button class="faq-q">
+            Do you redesign existing websites?
+            <span class="faq-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 7l5 5 5-5" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </button>
+          <div class="faq-a"><p>Yes. We can redesign outdated websites with a modern, fast, and user-friendly design.</p></div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="faq-item">
+          <button class="faq-q">
+            Is the website SEO-friendly?
+            <span class="faq-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 7l5 5 5-5" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </button>
+          <div class="faq-a"><p>Yes. Every website is built with clean code, responsive design, and basic on-page SEO best practices.</p></div>
+        </div>
+
+        <!-- FAQ Item 6 -->
+        <div class="faq-item">
+          <button class="faq-q">
+            Can you help with Google Business Profile?
+            <span class="faq-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 7l5 5 5-5" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </button>
+          <div class="faq-a"><p>Yes. We also help businesses optimize their Google Business Profile to improve their local online presence.</p></div>
+        </div>
+
+        <!-- FAQ Item 7 -->
+        <div class="faq-item">
+          <button class="faq-q">
+            Will I receive support after the website is launched?
+            <span class="faq-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 7l5 5 5-5" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </button>
+          <div class="faq-a"><p>Yes. Basic post-launch support is provided to help you get started smoothly.</p></div>
+        </div>
+
+        <!-- FAQ Item 8 -->
+        <div class="faq-item">
+          <button class="faq-q">
+            How do I get started?
+            <span class="faq-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 7l5 5 5-5" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </button>
+          <div class="faq-a"><p>Simply contact us with your project details, and we'll guide you through the entire website development process.</p></div>
+        </div>
+
+      </div><!-- /faq-list -->
+    </div>
+  </section><!-- /faq -->
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       CONTACT SECTION — Split layout: info left, form right
+       Left: heading + description + email/phone/location
+       Right: form with name, email, phone, service, message
+       ═══════════════════════════════════════════════════════════ -->
+  <section class="contact section" id="contact">
+    <div class="container contact-grid">
+
+      <!-- LEFT: Contact info -->
+      <div class="contact-info">
+        <span class="section-eyebrow">Contact</span>
+        <h2 class="section-heading">Let's Build Something Great Together</h2>
+        <p class="contact-desc">Tell us about your project and we'll get back to you within 24 hours with a free consultation. No obligations — just a friendly conversation about how we can help your business grow online.</p>
+
+        <!-- Contact details list -->
+        <div class="contact-details">
+
+          <!-- Email -->
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 4h12a1 1 0 011 1v8a1 1 0 01-1 1H3a1 1 0 01-1-1V5a1 1 0 011-1z" stroke="#2563EB" stroke-width="1.5"/><path d="M2 5l7 5 7-5" stroke="#2563EB" stroke-width="1.5"/></svg>
+            </div>
+            <span>abhinav3version@email.com</span>
+          </div>
+
+          <!-- Phone -->
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 3h3l1.5 3.75-1.75 1.25a9 9 0 004.25 4.25L11.25 10.5 15 12v3a1 1 0 01-1 1C7 16 2 11 2 4a1 1 0 011-1z" stroke="#2563EB" stroke-width="1.5"/></svg>
+            </div>
+            <span>+91 9341655480</span>
+          </div>
+
+          <!-- Location -->
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="8" r="3" stroke="#2563EB" stroke-width="1.5"/><path d="M15 8c0 5-6 9-6 9S3 13 3 8a6 6 0 0112 0z" stroke="#2563EB" stroke-width="1.5"/></svg>
+            </div>
+            <span>Bihar, India</span>
+          </div>
+
+        </div><!-- /contact-details -->
+      </div>
+
+      <!-- RIGHT: Contact form -->
+      <div class="contact-form-wrap">
+        <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+           <input type="hidden" name="access_key" value="b22d595c-8fce-41ca-80df-b657bdaf7d0d">
+
+          <!-- Name + Email row (2 columns) -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="e.g. Raj Sharma" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="e.g. raj@business.com" required />
+            </div>
+          </div>
+
+          <!-- Phone field -->
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. +91 98765 43210" />
+          </div>
+
+          <!-- Service dropdown -->
+          <div class="form-group">
+            <label for="service">Service Needed</label>
+            <select id="service" name="service">
+              <option value="">Select a service</option>
+              <option>Website Development</option>
+              <option>Landing Page</option>
+              <option>Business Website</option>
+              <option>Website Redesign</option>
+              <option>Google Business Profile</option>
+            </select>
+          </div>
+
+          <!-- Message textarea -->
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your business and what you need..." required></textarea>
+          </div>
+
+          <!-- Submit button (full width) -->
+          <button type="submit" class="btn-primary btn-full">
+            Send Message
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+
+          <!-- Success message (shown after form submit via JS) -->
+          <div class="form-success" id="formSuccess">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#22C55E" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="#22C55E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Message sent! We'll get back to you within 24 hours.
+          </div>
+
+        </form>
+      </div><!-- /contact-form-wrap -->
+    </div><!-- /contact-grid -->
+  </section><!-- /contact -->
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       FOOTER — Dark background with 4-column grid
+       Columns: Brand+social | Quick Links | Services | Contact
+       ═══════════════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <!-- Col 1: Logo + tagline + social icons -->
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo">
+          <span class="logo-mark">
+            <!-- Same AV SVG logo, displayed on dark footer -->
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="36" height="36" rx="10" fill="#2563EB"/>
+              <text x="18" y="25" font-family="Plus Jakarta Sans, Inter, system-ui" font-size="13" font-weight="800" fill="white" text-anchor="middle" letter-spacing="-0.3">AV</text>
+            </svg>
+          </span>
+          <span class="logo-text" style="color:#fff;">Abhinav <span class="logo-accent" style="color:#93C5FD;">Version</span></span>
+        </a>
+        <!-- Short footer tagline -->
+        <p class="footer-desc">Building modern, responsive websites that help local businesses grow online and attract more customers.</p>
+        <!-- Social media icons row -->
+        <div class="social-icons">
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="2" width="14" height="14" rx="4" stroke="currentColor" stroke-width="1.5"/><circle cx="9" cy="9" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="13" cy="5" r="1" fill="currentColor"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="2" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M6 8v5M6 6v.5M9 13V10a2 2 0 014 0v3M9 8v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M6 9c0 1.657 1.343 3.5 3 3.5.5 0 1-.1 1.4-.3l1.6.5-.5-1.6c.2-.4.3-.9.3-1.4 0-1.657-1.343-3-3-3S6 7.343 6 9z" stroke="currentColor" stroke-width="1.2"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Col 2: Quick navigation links -->
+      <div class="footer-links">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Services links -->
+      <div class="footer-links">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">Website Development</a></li>
+          <li><a href="#services">Landing Pages</a></li>
+          <li><a href="#services">Business Website</a></li>
+          <li><a href="#services">Website Redesign</a></li>
+          <li><a href="#services">Google Business Profile</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Contact info + CTA -->
+      <div class="footer-contact">
+        <h5>Get In Touch</h5>
+        <p>abhinav3version@email.com</p>
+        <p>+91 9341655480</p>
+        <a href="#contact" class="btn-primary" style="margin-top:1rem; display:inline-flex;">
+          Start a Project
+        </a>
+      </div>
+
+    </div><!-- /footer-grid -->
+
+    <!-- Footer bottom bar: copyright -->
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Abhinav Version. All rights reserved.</p>
+      <p>Designed &amp; Developed by <strong>Abhinav Version</strong></p>
+    </div>
+
+  </footer><!-- /footer -->
+
+  <!-- ── Main JavaScript file (animations, FAQ, form, nav) ── -->
+  <script src="script.js"></script>
+</body>
+</html>
